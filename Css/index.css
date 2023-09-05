@@ -93,10 +93,12 @@ header {
 }
 
 .nav-link {
+    color: var(--light-font);
     text-transform: uppercase;
     font-size: var(--font-medium);
     padding: var(--spacing-8) var(--spacing-16);
     transition: background .3s ease-in-out;
+    display: block;
 }
 
 .nav-link:hover {
@@ -319,6 +321,22 @@ order:-1;
     font-weight: 700;
     text-transform: uppercase;
 }
+
+/*Footer*/
+
+.footer{
+    padding: var(--spacing-68);
+    background-color: var(--dark-solid);
+}
+
+.footer-copy{
+margin: var(--spacing-16);
+color: var(--light-font);
+text-align: center;
+font-size: var(--font-small)
+}
+
+/*Animaciones*/
 
 @keyframes fade {
     0%{
