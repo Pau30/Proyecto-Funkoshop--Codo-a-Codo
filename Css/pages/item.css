@@ -1,0 +1,107 @@
+.item__coleccion {
+    font-size: var(--font-medium);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.item__contenedor {
+    margin: var(--spacing-68) 0;
+}
+
+.item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.item__nombre {
+    font-size: var(--font-jumbo);
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.item__texto {
+    font-size: var(--font-large);
+}
+
+
+.item__precio {
+    font-size: var(--font-jumbo);
+}
+
+.item__addCart {
+    display: flex;
+    padding-bottom: var(--spacing-24);
+}
+
+.item__input {
+    width: 105px;
+    height: 43px;
+    text-align: center;
+    font-size: var(--font-xlarge);
+    border: .5px solid var(--dark-300);
+
+}
+
+.item__cart--btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 var(--spacing-24) 0 var(--spacing-8);
+}
+
+.item__cart--add,
+.item__cart--sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    width: 22px;
+    background-color: #4F4F4F;
+    color: var(--light-font);
+    font-size: var(--font-medium);
+    border: none;
+    border-radius: 3px;    
+}
+
+.item__cart--add:hover,
+.item__cart--sub:hover{
+    background-color: var(--primary-solid);
+} 
+
+.item__add{
+    padding: var(--spacing-8);
+    background-color: var(--primary-solid);
+    color: var(--light-font);
+    font-size: var(--font-medium);    
+    border: none;
+
+}
+
+.item__promo {
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+    color: var(--secondary-solid);
+    text-transform: uppercase;
+}
+
+.item__promo a {
+    text-transform: none;
+    text-decoration: underline;    
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+}
+
+.item__prodRela {
+    text-transform: uppercase;
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+    padding-bottom: var(--spacing-24);
+}
+
+.item__list {
+    padding: var(--spacing-68) 0;
+}
