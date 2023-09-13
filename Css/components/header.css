@@ -1,0 +1,44 @@
+header {
+    background-color: var(--dark-solid);
+    padding: var(--spacing-36);
+}
+
+#menuNav {
+    background-color: var(--dark-solid);
+}
+
+#navLogo {
+    max-width: 300px;
+}
+
+.nav-link {
+    color: var(--light-font);
+    text-transform: uppercase;
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    transition: background .3s ease-in-out;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: var(--primary-900);
+}
+
+.nav-item {
+    padding: 0 var(--spacing-16);
+}
+
+.nav-icon {
+    display: flex;
+    align-self: center;
+}
+
+.dropdown-item {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    transition: background .3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-900);
+}

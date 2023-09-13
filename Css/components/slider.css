@@ -1,0 +1,19 @@
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+}
+
+.slider-items{
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-24);
+}
+
+.slider-titulo{
+    text-transform: uppercase;
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 600;
+}

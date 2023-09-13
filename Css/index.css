@@ -1,349 +1,37 @@
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
 
-/*Variables*/
-:root {
-    /*Palette*/
-    --primary-solid: #FF3333;
-    --primary-900: rgb(255, 51, 51, 0.9);
-    --primary-500: rgb(255, 51, 51, 0.5);
-    --primary-300: rgb(255, 51, 51, 0.3);
-
-    --secondary-solid: #1D84B5;
-    --secondary-900: rgb(29, 132, 181, 0.9);
-    --secondary-500: rgb(29, 132, 181, 0.5);
-    --secondary-300: rgb(29, 132, 181, 0.3);
-
-    --dark-solid: #1F1F1F;
-    --dark-900: rgb(31, 31, 31, 0.9);
-    --dark-500: rgb(31, 31, 31, , 0.5);
-    --dark-300: rgb(31, 31, 31, , 0.3);
-
-    --light-bg-solid: #FFFFFF;
-
-    --light-font: #FFFFFF;
-    --dark-font: #000000;
-
-    /*Typography*/
-    --base-font: 'Inter', sans-serif;
-    --alternative-font: 'Raleway', sans-serif;
-
-    /*Font-sizes*/
-    --font-display: 4.6em;
-    --font-jumbo: 3.8em;
-    --font-xlarge: 3em;
-    --font-large: 2.4em;
-    --font-medium: 1.8em;
-    --font-small: 1.6em;
-    --font-xsmall: 1.2em;
-
-    /*Spacing*/
-    --spacing-128: 12.8rem;
-    --spacing-68: 6.8rem;
-    --spacing-36: 3.6rem;
-    --spacing-28: 2.8rem;
-    --spacing-24: 2.4rem;
-    --spacing-20: 2rem;
-    --spacing-16: 1.6rem;
-    --spacing-12: 1.2rem;
-    --spacing-8: 0.8rem;
-}
+/* Variables */
+@import url('otros/variables.css');
 
 /*Estilos Generales*/
+@import url('otros/generales.css');
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-html {
-    font-family: 'Inter', sans-serif;
-    font-size: 62.5%;
-    color: var(--dark-solid)
-}
-
-img {
-    width: 100%;
-}
-
-.contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/*Estilos barra de Navegacion*/
-
-header {
-    background-color: var(--dark-solid);
-    padding: var(--spacing-36);
-}
-
-#menuNav {
-    background-color: var(--dark-solid);
-}
-
-#navLogo {
-    max-width: 300px;
-}
-
-.nav-link {
-    color: var(--light-font);
-    text-transform: uppercase;
-    font-size: var(--font-medium);
-    padding: var(--spacing-8) var(--spacing-16);
-    transition: background .3s ease-in-out;
-    display: block;
-}
-
-.nav-link:hover {
-    background-color: var(--primary-900);
-}
-
-.nav-item {
-    padding: 0 var(--spacing-16);
-}
-
-.nav-icon {
-    display: flex;
-    align-self: center;
-}
-
-.dropdown-item {
-    font-size: var(--font-medium);
-    padding: var(--spacing-8) var(--spacing-16);
-    transition: background .3s ease-in-out;
-}
-
-.dropdown-item:hover {
-    background-color: var(--primary-900);
-}
-
-
-/*Estilos Banner*/
-
-.banner {
-
-    background-image: url(../images/funkos-banner.webp);
-    padding: var(--spacing-128);
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.banner::before {
-    content: '';
-    background-color: rgb(0, 0, 0, 0);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(2px) brightness(.9);
-
-}
-
-.banner-contenido {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-24);
-    align-items: start;
-    z-index: 2;
-    position: relative;
-}
-
-.banner-title {
-    font-family: var(--alternative-font);
-    font-size: var(--font-jumbo);
-    color: var(--light-font);
-    font-weight: 500;
-}
-
-.banner-text {
-    font-family: var(--alternative-font);
-    font-size: var(--font-medium);
-    color: var(--light-font);
-}
-
-.banner-link {
-    color: var(--dark-font);
-    display: inline-block;
-    font-size: var(--font-medium);
-    background-color: var(--light-bg-solid);
-    padding: var(--spacing-12) var(--spacing-68);
-    border-radius: 50px;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: all .3s ease-in-out;
-}
-
-.banner-link:hover {
-    background-color: var(--primary-900);
-    color: var(--light-font)
-}
+/*Header y Banner*/
+@import url('components/header.css');
+@import url('components/banner.css');
 
 /*Colecciones*/
-
-.contenedor{
-    align-items: center;
-    padding: var(--spacing-16) 0;
-}
-
-.coleccion:nth-child(2) .coleccion-img{
-order:-1;
-}
-
-.coleccion-contenido{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-24);
-    align-items: start;
-}
-
-.coleccion-nombre{
-    font-family: var(--alternative-font);
-    font-size: var(--font-display);
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.coleccion-texto{
-    font-family: var(--alternative-font);
-    font-size: var(--font-large);
-    font-weight: 300;
-    border-bottom: 2px solid var(--primary-solid);
-    padding-bottom: var(--spacing-20);
-}
-
-.coleccion-link{
-    display: inline-block;
-    font-size: var(--font-medium);
-    background-color: var(--dark-solid);
-    color: var(--light-font);
-    text-transform: uppercase;
-    padding: var(--spacing-16) var(--spacing-36);
-    border-radius: 50px;
-    font-weight: 500;
-    transition: background .3seg ease-in-out;
-}
-
-.coleccion-link:hover{
-    background-color: var(--primary-solid);
-}
+@import url('components/colecciones.css');
 
 /*Slider*/
-
-.slider{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-36);
-    margin: var(--spacing-68) auto;
-}
-
-.slider-items{
-    display: flex;
-    list-style: none;
-    gap: var(--spacing-24);
-}
-
-.slider-titulo{
-    text-transform: uppercase;
-    font-family: var(--alternative-font);
-    font-size: var(--font-display);
-    font-weight: 600;
-}
+@import url('components/slider.css');
 
 /*Card items*/
-
-.card-img{
-    display: flex;
-    position: relative;
-}
-
-.card-tag{
-    text-transform: uppercase;
-    font-size: var(--font-xsmall);
-    color: var(--light-font);
-    background-color: var(--primary-900);
-    padding: var(--spacing-8) var(--spacing-12);
-    position: absolute;
-    right: 0;
-}
-
-.card-img img {
-    animation: fade .7s;
-}
-
-.card-img-back{
-    display: none;
-}
-
-.card-img:hover .card-img-back{
-    display: block;
-}
-
-.card-img:hover .card-img-front{
-    display: none;
-}
-
-.card-content{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-12);
-    padding: var(--spacing-16);
-}
-
-.card-coleccion{
-    font-size: var(--font-xsmall);
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.card-nombre{
-    font-size: var(--font-medium);
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.card-precio{
-    font-size: var(--font-small);    
-}
-
-.card-promo{
-    font-size: var(--font-xsmall);
-    color: var(--secondary-solid);
-    font-weight: 700;
-    text-transform: uppercase;
-}
+@import url('components/card.css');
 
 /*Footer*/
-
-.footer{
-    padding: var(--spacing-68);
-    background-color: var(--dark-solid);
-}
-
-.footer-copy{
-margin: var(--spacing-16);
-color: var(--light-font);
-text-align: center;
-font-size: var(--font-small)
-}
+@import url('components/footer.css');
 
 /*Animaciones*/
+@import url('otros/animaciones.css');
 
-@keyframes fade {
-    0%{
-        opacity: 0;
-    }
+/*Pages*/
+/*Shop*/
+@import url('/Css/pages/shop.css');
 
-    100%{
-        opacity: 1;
-    }
-}
+/*Item*/
+@import url('/Css/pages/item.css');
+
+/*Carrito*/
+@import url('/Css/pages/cart.css');

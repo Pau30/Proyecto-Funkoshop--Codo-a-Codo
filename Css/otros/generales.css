@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;    
+    color: inherit;    
+}
+
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    color: var(--dark-solid)
+}
+
+img {
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
