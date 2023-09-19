@@ -73,6 +73,7 @@
 
 .item__add{
     padding: var(--spacing-8);
+    margin-left: var(--spacing-16);
     background-color: var(--primary-solid);
     color: var(--light-font);
     font-size: var(--font-medium);    

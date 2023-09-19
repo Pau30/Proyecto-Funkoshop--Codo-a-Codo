@@ -22,6 +22,7 @@ header {
 
 .nav-link:hover {
     background-color: var(--primary-900);
+    color: var(--light-font);
 }
 
 .nav-item {
@@ -40,5 +41,5 @@ header {
 }
 
 .dropdown-item:hover {
-    background-color: var(--primary-900);
+    background-color: var(--primary-900);  
 }

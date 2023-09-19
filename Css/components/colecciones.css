@@ -44,3 +44,11 @@ order:-1;
 .coleccion-link:hover{
     background-color: var(--primary-solid);
 }
+
+/*Responsive*/
+
+@media (max-width:767px) {
+  .coleccion-img{
+        order:-1;
+        }
+}

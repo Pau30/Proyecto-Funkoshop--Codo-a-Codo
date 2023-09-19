@@ -1,7 +1,7 @@
 :root {
     /*Colors*/
     --primary-solid: #FF3333;
-    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-900: rgba(255, 51, 51, 0.9);
     --primary-500: rgb(255, 51, 51, 0.5);
     --primary-300: rgb(255, 51, 51, 0.3);
 
@@ -12,7 +12,7 @@
 
     --dark-solid: #1F1F1F;
     --dark-900: rgba(31, 31, 31, 0.9);
-    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-500: rgba(31, 31, 31, 0.5);
     --dark-300: rgb(31, 31, 31, 0.3);
 
     --light-bg-solid: #FFFFFF;
