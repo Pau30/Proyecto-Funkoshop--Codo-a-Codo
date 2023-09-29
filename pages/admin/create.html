@@ -25,29 +25,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse justify-content-end" id="navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="../shop/shop.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Shop
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../shop/shop.html">Funkos</a></li>
-                <li><a class="dropdown-item" href="#">Remeras</a></li>
-                <li><a class="dropdown-item" href="#">Llaveros</a></li>
-              </ul>
+          <ul class="navbar-nav">         
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/shop/contacto.html">Ver tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/shop/contacto.html">Contacto</a>
+              <a class="nav-link" href="./pages/shop/contacto.html">admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/admin/login.html">Login</a>
-            </li>
-            <li class="nav-icon">
-              <a href="../shop/cart.html">
-                <img src="../../images/icons/cart-icon.svg" alt="icon carrito" />
-              </a>
-            </li>
+              <a class="nav-link" href="./pages/admin/login.html">salir</a>
+            </li>         
           </ul>
         </div>
       </div>
@@ -55,9 +42,85 @@
   </header>
   <!--Main -->
   <main class="container">
+    <section class="crear">
+
+      <h1 class="crear__titulo">Crear nuevo item</h1>
+      <div class="crear__contenidoSuperior row d-flex">
+        <div class="col-5 d-flex align-items-center">
+          <label class="crear__subtitulo" for="categoria">Categoría:</label>
+          <select class="crear__seleccionar form-select" id="categoria">
+            <option selected>Seleccionar</option>
+            <option value="1">Funkos</option>
+            <option value="2">Remeras</option>
+            <option value="3">LLaveros</option>
+          </select>
+        
+        </div>
+
+        <div class="col-5 d-flex align-items-center">
+          <label class="crear__subtitulo" for="licencia">Licencia:</label>
+          <select class="crear__seleccionar form-select" id="licencia">
+            <option selected>Seleccionar</option>
+            <option value="1">Star Wars</option>
+            <option value="2">Harry Potter</option>
+            <option value="3">Pokemon</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="crear__subtitulo" for="nomProd">Nombre del Producto:</label>
+        <input class="crear__nombreInput" type="text" name="nomProd" id="nomProd"
+        placeholder="Kakashi Hatake Shippuden Saga" required>
+    <div>
+        <textarea class="crear__descripcion" name="descripcion" id="descripcion" rows="7"
+            placeholder="Descripción del producto" required></textarea>
+    </div>
+      </div>
+
+      <div>
+        <label class="crear__subtitulo" for="sku">SKU:</label>
+        <input class="crear__nombreInput sku" type="text" name="sku" id="sku"
+        placeholder="SSK111AB001" required>
+        <label class="crear__subtitulo" for="precio">Precio:</label>
+        <input class=" col-3 crear__nombreInput precio" type="text" name="precio" id="precio"
+        placeholder="$ 0.000,00" required>
+        <label class="crear__subtitulo" for="stock">Stock:</label>
+        <input class="crear__nombreInput stock text-center" type="text" name="stock" id="stock"
+        placeholder="0" required>
+    <div>
+
+      <div class="d-flex align-items-start">
+        <label class="crear__subtitulo" for="descuento">Descuento:</label>
+        <input class="crear__nombreInput descuento text-center" type="text" name="descuento" id="descuento"
+        placeholder="0%">
+        <div class="col-7 d-flex">
+        <label class="crear__subtitulo" for="cuotas">Cuotas:</label>
+          <select class="crear__seleccionar form-select" id="cuotas">
+            <option selected>Seleccionar</option>
+            <option value="1">3 Cuotas sin interés</option>
+            <option value="2">6 Cuotas sin interés</option>
+            <option value="3">12 Cuotas sin interés</option>
+          </select>
+        </div>
+      </div>
+
+      <div >
+        <label   class="crear__subtitulo m-0"  for="imagenes">Imagenes:</label>
+        <input class=" crear__seleccionar" type="file" name="imagenes" id="imagenes" multiple>
+    </div>
+   
+
+    <div>
+      
+      <button class="crear__boton">Agregar productos</button>
+      <button class="crear__boton">Limpiar</button>
+    </div>
+  </section>
+
+   
 
 
-    
   </main>
   <!--Footer-->
   <footer class="footer">

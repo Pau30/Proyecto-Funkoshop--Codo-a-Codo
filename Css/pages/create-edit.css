@@ -1,0 +1,87 @@
+
+.crear{
+    margin: var(--spacing-36) 0;
+}
+
+.crear__titulo {
+    font-size: var(--font-display);
+    font-weight: 700;
+    font-family: var(--alternative-font);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-36);
+}
+
+.crear__contenidoSuperior{
+    margin-bottom: var(--spacing-36);
+}
+
+.crear__subtitulo{
+    font-size: var(--font-large);
+    font-weight: 400;
+     margin-right: var(--spacing-16);      
+}
+
+.crear__seleccionar{
+    width: 50%;
+    font-size: var(--font-medium);    
+ }
+
+ .crear__nombreInput{
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    font-size: var(--font-medium);    
+    width: 20%;
+    min-width: 270px;    
+ }
+
+ .crear__descripcion{
+    margin: var(--spacing-36) 0;
+    width: 70%;
+    font-size: var(--font-medium);
+ }
+
+ .sku, .precio{
+    max-width: 115px;
+    min-width: auto;
+    margin-right: var(--spacing-68);
+    margin-bottom: var(--spacing-68);
+ }
+
+ .stock, .descuento{
+    max-width: 50px;
+    min-width: auto;
+    margin-right: var(--spacing-24);
+    margin-bottom: var(--spacing-68);
+ }
+
+ .crear__boton{
+   background-color: var(--primary-solid);
+   color: var(--light-font);
+   border: none;
+   font-size: var(--font-small);
+   font-weight: 600;
+   padding: var(--spacing-16) var(--spacing-24);
+   margin-right: var(--spacing-36);
+   margin-top: var(--spacing-36);
+ }
+
+ /*Edit*/
+
+ .edit__imagenes{
+   margin-top: var(--spacing-36);
+   margin-right: var(--spacing-24);
+ }
+
+ .edit__imagen{
+   max-width: 150px;
+   max-height: 150px;
+   margin-right: var(--spacing-24);
+ }
+
+ .edit__textoImg{
+   border-top: 2px solid var(--primary-solid);
+   font-family: var(--alternative-font);
+   font-size: var(--font-medium) ;
+   font-weight: 500;
+ }
