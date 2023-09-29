@@ -2,89 +2,159 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="../../Css/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="../../Css/index.css" />
+    <script src="https://kit.fontawesome.com/beb75062bd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <!--Barra de Navegacion-->
-    <nav class="navbar navbar-dark navbar-expand-lg" data-bs-theme="dark" id="menuNav">
-      <div class="container-fluid contenedor">
-        <a class="navbar-brand" href="../../index.html">
-          <picture>
-            <img src="../../images/branding/logo_light_horizontal.svg" alt="logo" id="navLogo" />
-          </picture>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse justify-content-end" id="navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="../shop/shop.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Shop
+    <header>
+        <!--Barra de Navegacion-->
+        <nav class="navbar navbar-dark navbar-expand-lg" data-bs-theme="dark" id="menuNav">
+            <div class="container-fluid contenedor">
+              <a class="navbar-brand" href="../../index.html">
+                <picture>
+                  <img src="../../images/branding/logo_light_horizontal.svg" alt="logo" id="navLogo" />
+                </picture>
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../shop/shop.html">Funkos</a></li>
-                <li><a class="dropdown-item" href="#">Remeras</a></li>
-                <li><a class="dropdown-item" href="#">Llaveros</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/shop/contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/admin/login.html">Login</a>
-            </li>
-            <li class="nav-icon">
-              <a href="../shop/cart.html">
-                <img src="../../images/icons/cart-icon.svg" alt="icon carrito" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!--Main -->
-  <main class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav">         
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/shop/contacto.html">Ver tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/shop/contacto.html">admin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/admin/login.html">salir</a>
+                  </li>         
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--Main -->
+    <main class="container">
+        <section>
+            <form class="buscar d-flex align-items-center">
+                <i> <img src="../../images/icons/search_icon.svg" alt="search icon"></i>
+                <input class="buscar__input" type="search" placeholder="código, nombre o categoría" id="search">
+            </form>
+        </section>
+        <section class="listado">
+            <div class="listado__contenido">
+                <h1 class="listado__titulo">Listado de productos</h1>
+                <div class="d-flex">
+                    <p class="listado__agregar m-0">agregar</p>
+                    <button class="listado__boton"><i
+                            class="fa-solid fa-square-plus"></i></button>
+                </div>
+            </div>
 
+            <div class="table-responsive listado__tabla ">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-1 tabla_subtitulo">ID</th>
+                            <th scope="col" class="col-2 tabla_subtitulo">Código</th>
+                            <th scope="col" class="col-5 tabla_subtitulo">Nombre del Producto</th>
+                            <th scope="col" class="col-2 tabla_subtitulo">Categoria</th>
+                            <th scope="col" class="col-2"></th>
 
-    
-  </main>
-  <!--Footer-->
-  <footer class="footer">
-    <nav class="navbar">
-      <ul class="navbar-items">
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/shop/shop.html">Shop</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
-      </div>
-      <div class="col-md-6 d-flex justify-content-end">
-        <picture>
-          <img src="../../images/branding/isotype.svg" alt="logo cara">
-        </picture>
-    </nav>
-    <p class="footer-copy">All rights reserved 2023 - Funkoshop </p>
-  </footer>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="td">1</th>
+                            <td>STW001001</td>
+                            <td>Baby Yoda Blueball</td>
+                            <td>STAR WARS</td>
+                            <td class="text-end">
+                                <button class="listado__edit"><img src="../../images/icons/edit_pencil.svg"
+                                        alt="edit"></button>
+                                <button class="listado__delete"><img src="../../images/icons/delete_trash.svg"
+                                        alt="delete"></button>
+                            </td>
+                        </tr>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+                        <tr>
+                        <tr>
+                            <th scope="row" class="td">2</th>
+                            <td>STW001002</td>
+                            <td>Boba Fett Fighter</td>
+                            <td>STAR WARS</td>
+                            <td class="text-end">
+                                <button class="listado__edit"><img src="../../images/icons/edit_pencil.svg"
+                                        alt="edit"></button>
+                                <button class="listado__delete"><img src="../../images/icons/delete_trash.svg"
+                                        alt="delete"></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row" class="td">3</th>
+                            <td>STW001003</td>
+                            <td>Luke Skylwalker & Grogu</td>
+                            <td>STAR WARS</td>
+                            <td class="text-end">
+                                <button class="listado__edit"><img src="../../images/icons/edit_pencil.svg"
+                                        alt="edit"></button>
+                                <button class="listado__delete"><img src="../../images/icons/delete_trash.svg"
+                                        alt="delete"></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row" class="td">4</th>
+                            <td>STW001004</td>
+                            <td>Stormtrooper Lightsaber</td>
+                            <td>STAR WARS</td>
+                            <td class="text-end">
+                                <button class="listado__edit"><img src="../../images/icons/edit_pencil.svg"
+                                        alt="edit"></button>
+                                <button class="listado__delete"><img src="../../images/icons/delete_trash.svg"
+                                        alt="delete"></button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <nav class="navbar">
+            <ul class="navbar-items">
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/shop/shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <picture>
+                    <img src="../../images/branding/isotype.svg" alt="logo cara">
+                </picture>
+        </nav>
+        <p class="footer-copy">All rights reserved 2023 - Funkoshop </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>
