@@ -35,3 +35,12 @@
 
 /*Carrito*/
 @import url('/Css/pages/cart.css');
+
+/*Admin*/
+@import url('/Css/pages/admin.css');
+
+/*Crear-Editar*/
+@import url('/Css/pages/create-edit.css');
+
+/*Registro-Login*/
+@import url('/Css/pages/login-register.css');
