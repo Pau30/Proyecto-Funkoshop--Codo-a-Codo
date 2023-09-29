@@ -1,0 +1,43 @@
+.login{
+    margin:var(--spacing-36) 0;
+}
+
+.subtitulo{
+    font-size: var(--font-large);
+    font-weight: 400;
+    margin-bottom: var(--spacing-36);      
+}
+
+.datos{
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.login__boton{
+    background-color: var(--primary-solid);
+    color: var(--light-font);
+    border: none;
+    font-size: var(--font-small);
+    font-weight: 600;
+    padding: var(--spacing-16) var(--spacing-36);
+    margin-right: var(--spacing-36);    
+}
+
+.login__recordar{
+    font-size: var(--font-medium);
+    font-weight: 400;
+    padding-left:var(--spacing-8) ;
+}
+
+.login__check{
+    border: 2px solid var(--dark-solid);   
+}
+
+.login__olvidar{
+ font-size: var(--font-small);
+font-weight: 400;
+color: var(--secondary-solid);
+margin-top: var(--spacing-24);
+}
