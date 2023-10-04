@@ -1,3 +1,7 @@
+/*Glide*/
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
+
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
 
@@ -16,6 +20,7 @@
 
 /*Slider*/
 @import url('components/slider.css');
+
 
 /*Card items*/
 @import url('components/card.css');
