@@ -43,3 +43,17 @@ header {
 .dropdown-item:hover {
     background-color: var(--primary-900);  
 }
+
+.navbar-toggler-icon{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width:767px) {
+    img{
+         width:80%;
+          }
+          .navbar>.container-fluid{
+            flex-wrap: nowrap;
+          }
+  }
