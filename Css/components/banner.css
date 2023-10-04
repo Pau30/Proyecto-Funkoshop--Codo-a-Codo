@@ -56,3 +56,9 @@
     background-color: var(--primary-900);
     color: var(--light-font)
 }
+
+@media (max-width:767px) {
+    .banner-contenido{
+          align-items: center;
+          }
+  }

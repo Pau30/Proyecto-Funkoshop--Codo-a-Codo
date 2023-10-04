@@ -8,7 +8,7 @@ ul {
 
 .precio,
 .ordenar,
-.buscar {
+.buscarItem {
     margin: 0 0 var(--spacing-12) 0;
 }
 
